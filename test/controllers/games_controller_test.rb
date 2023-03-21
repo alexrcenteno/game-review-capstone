@@ -23,4 +23,16 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal ["name", "image_url", "description", "genre", "created_at", "updated_at"], data.keys
   end
+
+  test "update" do
+    game = Game.first
+    patch "/games/#{game.id}.json", params: { name: "Updated name" }
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal "Updated name", data["name"]
+    assert_equal game.image_url, data["image_url"]
+    assert_equal game.description, data["description"]
+    assert_equal game.genre, data["genre"]
+  end
 end
