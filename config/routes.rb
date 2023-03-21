@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post "/games" => "games#create"
   get "/games/:id" => "games#show"
   patch "/games/:id" => "games#update"
+  delete "/games/:id" => "games#destroy"
 end

@@ -29,4 +29,10 @@ class GamesController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @game = Game.find_by(id: params[:id])
+    @game.destroy
+    render json: { message: "Game destroyed successfully" }
+  end
 end

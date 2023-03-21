@@ -35,4 +35,11 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
     assert_equal game.description, data["description"]
     assert_equal game.genre, data["genre"]
   end
+
+  test "destroy" do
+    assert_difference "Game.count", -1 do
+      delete "/games/#{Game.first.id}.json"
+      assert_response 200
+    end
+  end
 end
