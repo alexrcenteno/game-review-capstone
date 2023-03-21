@@ -7,7 +7,7 @@ User.create!(
 User.create!(
   name: "Michael Scott",
   email: "michael@test.com",
-  password_didest: "password",
+  password: "password",
   image_url: "https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png",
 )
 User.create!(
@@ -24,7 +24,7 @@ User.create!(
 )
 User.create!(
   name: "Andy Bernard",
-  emai: "narddog@test.com",
+  email: "narddog@test.com",
   password: "password",
   image_url: "https://static.wikia.nocookie.net/theoffice/images/2/20/C0164512-C4C2-485C-9CB6-85B31F642090.jpeg/revision/latest?cb=20200103213101",
 )
@@ -33,16 +33,16 @@ Game.create!(
   name: "Valorant",
   image_url: "https://cdn.arstechnica.net/wp-content/uploads/2020/04/valorant-listing-800x450.jpg",
   description: "Team based multiplayer. Each team has to attack or defened a bombsite.Each player can pick an agent, and each agent has their own special abilities.",
-  Genre: "FPS",
+  genre: "FPS",
 )
 Game.create!(
   name: "Red Dead Redemption 2",
   image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
   description: "The story is set in a fictionalized representation of the United States in 1899 and follows the exploits of outlaw Arthur Morgan, a member of the Van der Linde gang, who must deal with the decline of the Wild West whilst attempting to survive against government forces, rival gangs, and other adversaries",
-  Genre: "Action-adventure",
+  genre: "Action-adventure",
 )
 Game.create!(
-  name: "The last of us"
+  name: "The last of us",
   image_url: "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg",
   description: " In 2013, an outbreak of a mutant Cordyceps fungus ravages the United States, transforming its human hosts into aggressive creatures known as the infected",
   genre: "survial horror",

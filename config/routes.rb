@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   delete "/favorites/:id" => "favorites#destroy"
 
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
 end
