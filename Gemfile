@@ -28,6 +28,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
+gem "rack-cors"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
